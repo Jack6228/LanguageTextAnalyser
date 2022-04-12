@@ -44748,19 +44748,33 @@
     $('#filter-boxes input').on( 'keyup', function () {
       var col = $(this).data("col");
       $('#permits').DataTable().column( col ).search( $(this).val() ).draw();
-      $('#permits').DataTable().reload()
+      $('#permits').destroy();
     } );
 });
 </script>
 
-<!-- $(document).ready(function() {
-  var table = $('#example').DataTable();
-  // Apply the search
-  table.columns().eq( 0 ).each( function ( colIdx ) {
-    $( 'input', table.column( colIdx ).footer() ).on( 'keyup change', function () { table .column( colIdx ) .search( this.value ) .draw();
-     } );
-    } );
-   } ); -->
+<!-- <script type="text/javascript">
+  $(document).ready(function() {
+  	// Setup - add a text input to each footer cell
+  	$('#permits thead th').each( function () {
+  		var title = $('#permits thead th').eq( $(this).index() ).text();
+  		$(this).html( '<input type="text" placeholder="'+title+'" />' );
+  	} );
+
+  	// DataTable
+  	var table = $('#permits').DataTable();
+
+  	// Apply the search
+  	table.columns().eq( 0 ).each( function ( colIdx ) {
+  		$( 'input', table.column( colIdx ).footer() ).on( 'keyup change', function () {
+  			table
+  				.column( colIdx )
+  				.search( this.value )
+  				.draw();
+  		} );
+  	} );
+  } );
+</script> -->
 
 <script>
   $(document).ready(function () {
