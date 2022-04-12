@@ -24,7 +24,7 @@
       <option value="4">
       <option value="5">
     </datalist>
-    <input data-col="3" type="select" placeholder="Title">
+    <input data-col="3" type="select" placeholder="Title" onfocus="this.value=''">
     <input data-col="4" type="select" placeholder="Album">
     <input data-col="5" type="select" placeholder="Artist/Site">
     <!-- <input data-col="6" type="date" placeholder="Search Date"> -->
@@ -44747,8 +44747,8 @@
     });
     $('#filter-boxes input').on( 'keyup', function () {
       var col = $(this).data("col");
-      $('#permits').DataTable().column( col ).search( $(this).val() ).draw();
       $('#permits').destroy();
+      $('#permits').DataTable().column( col ).search( $(this).val() ).draw();
     } );
 });
 </script>
