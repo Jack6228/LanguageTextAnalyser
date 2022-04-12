@@ -1,6 +1,12 @@
 <style>
   body {
-  background-color: #05CC90;
+  background-image: linear-gradient(#05CC90, #843B62, #F67E7D);
+  <!-- background-color: #05CC90; -->
+  }
+
+  div {
+    width = 90%;
+    color:#FAA80F;
   }
 
   h1 {
@@ -25,21 +31,17 @@
   width: 20;
   }
 
-  input[type=image] {
-  width: 20px;
+  select {
+  color: #3B2F2F;
+  opacity=1;
+  padding: 0px 0px;
+  background-color: #05CC90;
+  border: 2px solid #05CC90;
+  border-radius: 5px;
   }
 
-  input[type=text] {
-  width: 90%;
-  padding: 12px 20px;
-  <!-- background-color: white; -->
-  }
-  input[type=text]:focus {
-  <!-- background-color: #7C77B9; -->
-  text-color:white
-  <!-- border-width: 0px; -->
-  <!-- border-style: solid; -->
-  <!-- border-color = #077F5B; -->
+  input[type=image] {
+  width: 20px;
   }
 
   input[type=select] {
@@ -48,9 +50,7 @@
   color: #3B2F2F;
   border: 2px solid #B33951;
   border-radius: 5px;
-  <!-- border: none;
-  border-radius: 1px red; -->
-  background-color: #FFBF00;
+  background-color: #D4D2CF;
   }
   input[type=select]:focus {
   background-color: #CFFCFF;
@@ -87,7 +87,7 @@ $(function(){
 
 <body class="en">
   <center>
-    <h1 style="font-size:40; color:#CEFF1A;">Language Text Analayser Alpha</h1>
+    <h1 style="font-size:40; color:#843B62;">Language Text Analyser Alpha</h1>
     <br>
     <p>Use the search boxes below to find songs or articles from varying languages and sources
       of different difficulties. If you're a beginner or looking for easy texts, note that songs
@@ -109,12 +109,12 @@ $(function(){
       <img src="gb.svg"></img>
       <!-- <img src="fr.svg"></img>
       <img src="es.svg"></img> -->
-  </div>
+    </div>
   <br>
   <div id="includedContent"></div>
-
-  <hr style="width:90%>
-  Thanks for reading me
+  <br>
+  <hr width="90%;" color="red;" size="10;">
+  <p style="color:#05CC90"> Thanks for reading me </p>
 
   </center>
 </body>
