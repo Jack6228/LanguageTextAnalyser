@@ -1,0 +1,117 @@
+<style>
+  body {
+  background-color: #05CC90;
+  }
+  body.fr > p[lang=en] {
+    display: none;
+  }
+  body.en > p[lang=fr] {
+    display: none;
+  }
+
+  h1 {
+    color: #B6A39E;
+    text-align: center;
+    font-size: 20pt;
+  }
+
+  p {
+    font-family: verdana;
+    font-size: 16;
+    color: white;
+    width: 90%;
+  }
+
+  textarea:focus, input:focus{
+    outline: none;
+  }
+
+  img {
+  height: 20px;
+  width: 20;
+  }
+
+  input[type=image] {
+  width: 20px;
+  }
+
+  input[type=text] {
+  width: 25%;
+  padding: 12px 20px;
+  <!-- background-color: white; -->
+  }
+  input[type=text]:focus {
+  <!-- background-color: #7C77B9; -->
+  text-color:white
+  <!-- border-width: 0px; -->
+  <!-- border-style: solid; -->
+  <!-- border-color = #077F5B; -->
+  }
+
+  input[type=select] {
+  width: 90%;
+  padding: 12px 20px;
+  color: #3B2F2F;
+  border: 2px solid #B33951;
+  border-radius: 5px;
+  <!-- border: none;
+  border-radius: 1px red; -->
+  background-color: #FFBF00;
+  }
+  input[type=select]:focus {
+  background-color: #CFFCFF;
+  }
+
+  table {
+    border: 2px solid #B33951;
+    border-radius: 5px;
+    opacity: 0.9;
+  }
+}
+
+</style>
+
+<!-- <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet"/> -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+<!-- <<link rel="stylesheet" href=https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+<script src="jquery.js"></script>
+<script>
+$(function(){
+  $("#includedContent").load("html_Table.html");
+});
+</script>
+
+<body class="en">
+  <center>
+    <h1 style="font-size:40; color:#CEFF1A;">Language Text Analayser Alpha</h1>
+    <br>
+    <p>Use the search boxes below to find songs or articles from varying languages and sources
+      of different difficulties. If you're a beginner or looking for easy texts, note that songs
+      are typically simpler than articles.</p>
+    <br>
+    <div style="column-count:2;">
+      <p style="font-size:12;">Currently supported languages:</p>
+      <img src="no.svg"></img>
+      <img src="it.svg"></img>
+      <img src="de.svg"></img>
+      <img src="gb.svg"></img>
+      <img src="fr.svg"></img>
+      <img src="es.svg"></img>
+      <br>
+      <p style="font-size:12;">View this page in:</p>
+      <input type="image" src="no.svg" onclick="document.body.className='en'">
+      <input type="image" src="it.svg" onclick="document.body.className='fr'">
+      <img src="de.svg"></img>
+      <img src="gb.svg"></img>
+      <img src="fr.svg"></img>
+      <img src="es.svg"></img>
+  </div>
+  <br>
+  <div id="includedContent"></div>
+  </center>
+</body>

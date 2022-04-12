@@ -1,8 +1,8 @@
 ﻿<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
-  <div id="filter-boxes">
-    <input data-col="0" type="select" placeholder="Language"  list="languages">
+  <div id="filter-boxes" style="column-count:3;" style="width=90%;">
+    <input data-col="0" type="select" placeholder="Language" list="languages">
     <datalist id="languages">
       <option value="German">
       <option value="Spanish">
@@ -11,11 +11,13 @@
       <option value="English">
       <option value="Norwegian">
     </datalist>
+    <br>
     <input data-col="1" type="select" placeholder="Type" list="types">
     <datalist id="types">
       <option value="Article">
       <option value="Song">
     </datalist>
+    <br>
     <input data-col="2" type="select" placeholder="Difficulty" list="diffs">
     <datalist id="diffs">
       <option value="1">
@@ -24,9 +26,13 @@
       <option value="4">
       <option value="5">
     </datalist>
+    <br>
     <input data-col="3" type="select" placeholder="Title" onfocus="this.value=''">
+    <br>
     <input data-col="4" type="select" placeholder="Album">
+    <br>
     <input data-col="5" type="select" placeholder="Artist/Site">
+    <br>
     <!-- <input data-col="6" type="date" placeholder="Search Date"> -->
   </div>
   <table border="01" class="table dataTable no-footer" id="permits" role="grid" aria-describedby="permits_info" style="width: 90%;" data-turbolinks="false">
@@ -41,6 +47,17 @@
               <th class="sorting" tabindex="0" aria-controls="permits" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 10%;">Date Added</th>
           </tr>
       </thead>
+      <!-- <tfoot>
+          <tr>
+            <th id="Language">Position</th>
+            <th id="Type">Office</th>
+            <th>Age</th>
+            <th>Age</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+          </tr>
+        </tfoot> -->
 <tbody>
   <tr>
     <td>German</td>
@@ -44739,7 +44756,7 @@
 </tbody>
   </table>
 
-<script>
+<script type="text/javascript">
   $(document).ready(function() {
     $('#permits').DataTable({
       dom: 'lirtp',
@@ -44747,36 +44764,16 @@
     });
     $('#filter-boxes input').on( 'keyup', function () {
       var col = $(this).data("col");
-      $('#permits').destroy();
+      // $('#permits').destroy();
       $('#permits').DataTable().column( col ).search( $(this).val() ).draw();
     } );
 });
 </script>
 
-<!-- <script type="text/javascript">
-  $(document).ready(function() {
-  	// Setup - add a text input to each footer cell
-  	$('#permits thead th').each( function () {
-  		var title = $('#permits thead th').eq( $(this).index() ).text();
-  		$(this).html( '<input type="text" placeholder="'+title+'" />' );
-  	} );
 
-  	// DataTable
-  	var table = $('#permits').DataTable();
+<!-- ----------------------------------------------- -->
 
-  	// Apply the search
-  	table.columns().eq( 0 ).each( function ( colIdx ) {
-  		$( 'input', table.column( colIdx ).footer() ).on( 'keyup change', function () {
-  			table
-  				.column( colIdx )
-  				.search( this.value )
-  				.draw();
-  		} );
-  	} );
-  } );
-</script> -->
-
-<script>
+<script type="text/javascript">
   $(document).ready(function () {
 
       $('.filter').change(function () {
