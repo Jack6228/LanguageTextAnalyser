@@ -44758,14 +44758,14 @@
 
 <script type="text/javascript">
   $(document).ready(function () {
-    $('#permits').DataTable({
+    var oTable = $('#permits').DataTable({
       dom: 'lirtp',
       "lengthMenu": [[25, 10, 50, 100], [25, 10, 50, 100]],
     });
+    // oTable.fnDestroy();
     $('#filter-boxes input').on( 'keyup', function () {
       var col = $(this).data("col");
-      $('#permits').DataTable().column( col ).search( $(this).val() ).draw();
-      $('#example').DataTable().ajax.reload();
+      oTable.column( col ).search( $(this).val() ).draw();
     } );
 });
 </script>
