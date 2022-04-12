@@ -2,12 +2,6 @@
   body {
   background-color: #05CC90;
   }
-  body.fr > p[lang=en] {
-    display: none;
-  }
-  body.en > p[lang=fr] {
-    display: none;
-  }
 
   h1 {
     color: #B6A39E;
@@ -71,6 +65,11 @@
 
 </style>
 
+<head>
+  <title>LTA.α</title>
+  <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-google-translate-16.png">
+</head>
+
 <!-- <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet"/> -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bulma.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
@@ -104,14 +103,18 @@ $(function(){
       <img src="es.svg"></img>
       <br>
       <p style="font-size:12;">View this page in:</p>
-      <input type="image" src="no.svg" onclick="document.body.className='en'">
+      <!-- <input type="image" src="no.svg" onclick="document.body.className='en'">
       <input type="image" src="it.svg" onclick="document.body.className='fr'">
-      <img src="de.svg"></img>
+      <img src="de.svg"></img> -->
       <img src="gb.svg"></img>
-      <img src="fr.svg"></img>
-      <img src="es.svg"></img>
+      <!-- <img src="fr.svg"></img>
+      <img src="es.svg"></img> -->
   </div>
   <br>
   <div id="includedContent"></div>
+
+  <hr style="width:90%>
+  Thanks for reading me
+
   </center>
 </body>
