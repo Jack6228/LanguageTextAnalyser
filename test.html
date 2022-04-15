@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>LTA.α</title>
-  <link type="image/svg" sizes="16x16" rel="icon" href="fav.svg">
+  <link type="image/svg" sizes="16x16" rel="icon" href="fav.svg?">
 <style>
   body {
   background-image: linear-gradient(#05CC90, #843B62, #F67E7D);
@@ -17,7 +17,7 @@
   h1 {
     color: #B6A39E;
     text-align: center;
-    font-size: 20pt;
+    font-size: 50pt;
   }
 
   p {
@@ -84,9 +84,10 @@ $(function(){
 </script>
 
 <center>
-  <h1 style="font-size:40; color:#843B62;">Language Text Analyser Alpha</h1>
+  <h1 style="color:#843B62;">Language Text Analyser Alpha</h1>
   <br>
-  <p>Use the search boxes below to find songs or articles from varying languages and sources
+  <!-- <p lang="no">Søk for ting under her. Sanger er vanligvis lettere enn nyheter, hvis du er en anfanger</p> -->
+  <p lang="en">Use the search boxes below to find songs or articles from varying languages and sources
     of different difficulties. If you're a beginner or looking for easy texts, note that songs
     are typically simpler than articles.</p>
   <br>
@@ -107,10 +108,12 @@ $(function(){
     <!-- <img src="fr.svg"></img>
     <img src="es.svg"></img> -->
   </div>
+
 <br>
-<div id="includedContent"></div>
+<!-- <div id="includedContent"></div> -->
 <br>
 
+<a href="form.html" class="button">Request a new language, news outlet, or music album</a>
 
 </center>
 
