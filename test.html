@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LTA.α</title>
+  <link type="image/svg" sizes="16x16" rel="icon" href="fav.svg">
 <style>
   body {
   background-image: linear-gradient(#05CC90, #843B62, #F67E7D);
@@ -28,7 +33,7 @@
 
   img {
   height: 20px;
-  width: 20;
+  width: 20px;
   }
 
   select {
@@ -62,22 +67,15 @@
     opacity: 0.9;
   }
 }
-
 </style>
-
-<head>
-  <title>LTA.α</title>
-  <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-google-translate-16.png">
 </head>
 
-<!-- <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet"/> -->
+<body class="en">
+
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bulma.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-<!-- <<link rel="stylesheet" href=https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"> -->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-
 <script src="jquery.js"></script>
 <script>
 $(function(){
@@ -85,36 +83,44 @@ $(function(){
 });
 </script>
 
-<body class="en">
+<center>
+  <h1 style="font-size:40; color:#843B62;">Language Text Analyser Alpha</h1>
+  <br>
+  <p>Use the search boxes below to find songs or articles from varying languages and sources
+    of different difficulties. If you're a beginner or looking for easy texts, note that songs
+    are typically simpler than articles.</p>
+  <br>
+  <div style="column-count:2;">
+    <p style="font-size:12;">Currently supported languages:</p>
+    <img src="no.svg"></img>
+    <img src="it.svg"></img>
+    <img src="de.svg"></img>
+    <img src="gb.svg"></img>
+    <img src="fr.svg"></img>
+    <img src="es.svg"></img>
+    <br>
+    <p style="font-size:12;">View this page in:</p>
+    <!-- <input type="image" src="no.svg" onclick="document.body.className='en'">
+    <input type="image" src="it.svg" onclick="document.body.className='fr'">
+    <img src="de.svg"></img> -->
+    <img src="gb.svg"></img>
+    <!-- <img src="fr.svg"></img>
+    <img src="es.svg"></img> -->
+  </div>
+<br>
+<div id="includedContent"></div>
+<br>
+
+
+</center>
+
+<footer>
   <center>
-    <h1 style="font-size:40; color:#843B62;">Language Text Analyser Alpha</h1>
-    <br>
-    <p>Use the search boxes below to find songs or articles from varying languages and sources
-      of different difficulties. If you're a beginner or looking for easy texts, note that songs
-      are typically simpler than articles.</p>
-    <br>
-    <div style="column-count:2;">
-      <p style="font-size:12;">Currently supported languages:</p>
-      <img src="no.svg"></img>
-      <img src="it.svg"></img>
-      <img src="de.svg"></img>
-      <img src="gb.svg"></img>
-      <img src="fr.svg"></img>
-      <img src="es.svg"></img>
-      <br>
-      <p style="font-size:12;">View this page in:</p>
-      <!-- <input type="image" src="no.svg" onclick="document.body.className='en'">
-      <input type="image" src="it.svg" onclick="document.body.className='fr'">
-      <img src="de.svg"></img> -->
-      <img src="gb.svg"></img>
-      <!-- <img src="fr.svg"></img>
-      <img src="es.svg"></img> -->
-    </div>
-  <br>
-  <div id="includedContent"></div>
-  <br>
   <hr width="90%;" color="red;" size="10;">
   <p style="color:#05CC90"> Thanks for reading me </p>
+  <br>
+</center>
+</footer>
 
-  </center>
 </body>
+</html>
