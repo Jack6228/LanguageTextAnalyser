@@ -15,7 +15,7 @@ h1 {
 }
 
 p {
-  font-family: verdana;
+  font-family: arial;
   font-size: 16;
   color: white;
   width: 90%;
@@ -64,10 +64,9 @@ table {
 a.button {
   width: 90%;
   padding: 12px 20px;
-  color: #3B2F2F;
-  border: 2px solid #B33951;
-  background-color: #D4D2CF;
+  color: white;
+  background-color: Navy;
+  border: 2px solid white;
   border-radius: 10px;
   text-decoration: none;
-  color: black;
 }
