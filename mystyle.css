@@ -1,11 +1,12 @@
 body {
-background-image: linear-gradient(#05CC90, #843B62, #F67E7D);
-<!-- background-color: #05CC90; -->
+/* background-image: linear-gradient(#05CC90, #843B62, #F67E7D); */
+background-color: #C89FD1;
 }
 
 div {
-  width = 90%;
-  color:#FAA80F;
+  break-inside: avoid-column;
+  /* width = 90%;
+  color:blue; */
 }
 
 h1 {
@@ -17,7 +18,7 @@ h1 {
 p {
   font-family: arial;
   font-size: 16;
-  color: white;
+  color: #060327;
   width: 90%;
 }
 
@@ -36,7 +37,7 @@ opacity=1;
 padding: 0px 0px;
 background-color: #05CC90;
 border: 2px solid #05CC90;
-border-radius: 5px;
+border-radius: 0px;
 }
 
 input[type=image] {
@@ -47,39 +48,55 @@ input[type=select] {
 width: 90%;
 padding: 12px 20px;
 color: #3B2F2F;
-border: 2px solid #B33951;
+border: 1.5px solid #05CC90;
 border-radius: 5px;
-background-color: #D4D2CF;
+background-color: #DEC5E3;
+transition: background-color .3s;
 }
+
 input[type=select]:focus {
-background-color: #CFFCFF;
+background-color: #ddd;
 }
 
 table {
   border: 2px solid #B33951;
   border-radius: 5px;
-  opacity: 0.9;
+  opacity: 1;
+}
+
+tr:hover {
+  background-color: coral;
+}
+
+tr {
+  background-color: #DEC5E3;
+  color: black;
+}
+
+th {
+  background-color: coral;
+  color: black;
 }
 
 a.button {
   width: 90%;
   padding: 12px 20px;
-  color: #3B2F2F;
-  background-color: #D4D2CF;
-  border: 2px solid #B33951;
+  color: black;
+  background-color: #DEC5E3;
+  border: 2px solid #05CC90;
   border-radius: 5px;
   text-decoration: none;
 }
 
 .topnav {
-  background-color: #333;
+  background-color: grey;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
@@ -90,10 +107,31 @@ a.button {
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+  transition: background-color .3s;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #05CC90;
-  color: white;
+  color: black;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  width: 100%;
+  padding: 0px 10px;
+  color: #3B2F2F;
+  border: 1px solid #05CC90;
+  border-radius: 2px;
+  background-color: #05CC90;
+  transition: background-color .3s;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  width: 100%;
+  padding: 0px 10px;
+  color: #3B2F2F;
+  border: 1px solid #05CC90;
+  border-radius: 2px;
+  background-color: #DEC5E3;
+  transition: background-color .3s;
 }
