@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
 <head>
   <title>Språk Ting</title>
   <link rel="stylesheet" href="mystyle.css">
@@ -9,8 +9,8 @@
 </head>
 
 <body class="en">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="jquery.js"></script>
 <script>
 $(function(){
@@ -18,52 +18,51 @@ $(function(){
 });
 </script>
 
+<div class="topnav", align="left", style="background-color:grey">
+ <a class="active" href="index-no.html">Home</a>
+ <a href="stats-no.html">Statistics</a>
+
+ <a class="active" style="float:right" href="index-no.html"><img type="image" src="no.svg"></a>
+ <a style="float:right"href="index.html"><img type="image" src="gb.svg"></a>
+</div>
+
 <center>
-  <br>
+  <!-- <p style="align:right;"> Align right>>>
+  <a href="index-no.html"><img type="image" src="no.svg"></a>
+  <a href="index.html"><img type="image" src="gb.svg"></a></p> -->
   <h1 style="color:#843B62; font-size:30pt">Language Text Analyser Thing</h1>
   <br>
-  <p>Søk for ting under her. Sanger er vanligvis lettere enn nyheter, hvis du er en anfanger</p>
+  <p>Søk for låter og nyheter fra mange språk. Vanskeligheten går fra 1 (letteste) til 5 (vanskeligst).<br>Låter er vanligvis mindre vanskellig enn nyheter.</p>
+  <!-- <p style="font-size:10;">Currently supported languages:</p>
+  <img src="no.svg"></img>
+  <img src="it.svg"></img>
+  <img src="de.svg"></img>
+  <img src="gb.svg"></img>
+  <img src="fr.svg"></img>
+  <img src="es.svg"></img> -->
+
   <br>
+  <div id="includedContent"></div>
+  <br>
+
   <div style="column-count:2;">
-    <p style="font-size:12;">Støttede språk:</p>
-    <img src="no.svg"></img>
-    <img src="it.svg"></img>
-    <img src="de.svg"></img>
-    <img src="gb.svg"></img>
-    <img src="fr.svg"></img>
-    <img src="es.svg"></img>
+    <p>
+        <a href="form.html" class="button">Request a Feature</a>
+        Request a new language, news site or music album.
+    </p>
     <br>
-    <p style="font-size:12;">Se denne siden på:</p>
-    <a href="index-no.html"><img type="image" src="no.svg"></a>
-    <a href="index.html"><img type="image" src="gb.svg"></a>
-    <img src="it.svg"></img>
-    <img src="de.svg"></img>
-    <!-- <img src="fr.svg"></img>
-    <img src="es.svg"></img> -->
+    <p>
+      <a href="form.html" class="button">Donere</a>
+      Support this work & help keep the site running og uten annonser. Tusen takk!
+    </p>
   </div>
-
-<br>
-<!-- <div id="includedContent"></div> -->
-<br>
-
-<!-- <div style="column-count:2;">
-  <p>
-      <a href="form.html" class="button">Be om noe</a>
-      Dette hjelper oss...
-  </p>
-  <br>
-  <p>
-    <a href="form.html" class="button">Donere</a>
-    Dette betyr at...
-  </p>
-</div> -->
 
 </center>
 
 <footer>
   <center>
   <hr width="90%;" size="10;">
-  <p style="color:#05CC90"> Tusen takk for besøk! </p>
+  <p style="color:white"> Opphavsrett 2022 </p>
   <br>
 </center>
 </footer>
