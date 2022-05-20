@@ -4,7 +4,7 @@ background-color: #C89FD1;
 }
 
 div {
-  break-inside: avoid-column;
+  /* break-inside: avoid-column; */
   /* width = 90%;
   color:blue; */
 }
@@ -55,7 +55,8 @@ transition: background-color .3s;
 }
 
 input[type=select]:focus {
-background-color: #ddd;
+  background-color: #ddd;
+  border: 1.5px solid coral;
 }
 
 table {
@@ -86,6 +87,13 @@ a.button {
   border: 2px solid #05CC90;
   border-radius: 5px;
   text-decoration: none;
+}
+
+a.button:hover {
+  background-color: coral;
+  /* border: 2px solid blue; */
+  transition: background-color .3s;
+  transition: border .3s;
 }
 
 .topnav {
@@ -134,4 +142,14 @@ a.button {
   border-radius: 2px;
   background-color: #DEC5E3;
   transition: background-color .3s;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: coral;
+  transition: background-color .3s;
+  transition: border .3s;
+}
+
+tr.descriptions>td {
+  padding-bottom: 1em;
 }
